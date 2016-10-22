@@ -1,0 +1,14 @@
+{
+  "name": "tic",
+  "version": "1.0.0",
+  "description": "A Tic Tac Toe Clone",
+  "main": "./window.js",
+  "scripts": {
+      "start": "electron ."
+  },
+  "author": "Sufien Tout",
+  "license": "MIT",
+  "devDependencies": {
+    "electron-prebuilt": "^1.2.7"
+  }
+}

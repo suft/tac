@@ -1,0 +1,41 @@
+{
+    "00": {
+        "type": "state",
+        "change": "Main"
+    },
+    "01": {
+        "type": "background",
+        "background": "black",
+        "mode": "rgb"
+    },
+    "02": {
+        "type": "text",
+        "x": 400,
+        "y": 250,
+        "text": "Sufy Studios",
+        "horizontal": "center",
+        "vertical": "center",
+        "leading": 10,
+        "size": 120,
+        "weight": 10,
+        "style": "normal",
+        "fill": "SkyBlue",
+        "stroke": "DarkSlateGray",
+        "font": "AzedoLight"
+    },
+    "03": {
+        "type": "text",
+        "x": 400,
+        "y": 350,
+        "text": "Presents",
+        "horizontal": "center",
+        "vertical": "center",
+        "leading": 10,
+        "size": 50,
+        "weight": 0,
+        "style": "normal",
+        "fill": "White",
+        "stroke": "White",
+        "font": "AzedoBold"
+    }
+}
