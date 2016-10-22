@@ -1,5 +1,5 @@
 {
-  "name": "tic",
+  "name": "tac",
   "version": "1.0.0",
   "description": "A Tic Tac Toe Clone",
   "main": "./window.js",

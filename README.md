@@ -1,8 +1,13 @@
 # Tic
-![Tic](./tictactoe.png "Tic")
+![Tac](./tictactoe.png "Tic")
 
-## Installation
-    git clone https://github.com/suft/tic
+## Installation and Usage
+```bash
+$ git clone https://github.com/suft/tac
+$ cd tac
+$ npm start
+```
+
 ## Dependencies
 * node.js
 * electron
