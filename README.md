@@ -1,5 +1,5 @@
-# Tic
-![Tac](./tictactoe.png "Tic")
+# Tac
+![Tac](./tictactoe.png "Tac")
 
 ## Installation and Usage
 ```bash
@@ -9,9 +9,9 @@ $ npm start
 ```
 
 ## Dependencies
-* node.js
-* electron
-* p5.js
+* [Node](https://github.com/nodejs/node)
+* [Electron](https://github.com/electron/electron)
+* [p5.js](https://github.com/processing/p5.js)
 
 ## Authors
 [Sufien Tout](https://github.com/suft "GitHub")  
