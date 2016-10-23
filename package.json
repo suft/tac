@@ -4,11 +4,13 @@
   "description": "A Tic Tac Toe Clone",
   "main": "./window.js",
   "scripts": {
-      "start": "./node_modules/.bin/electron ."
+    "start": "electron .",
+    "build": "electron-packager . Tac"
   },
   "author": "Sufien Tout",
   "license": "MIT",
   "devDependencies": {
+    "electron-packager": "^8.1.0",
     "electron-prebuilt": "^1.2.7"
   }
 }

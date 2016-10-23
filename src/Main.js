@@ -7,6 +7,9 @@ function setup() {
         },
         'Game': function() {
             state.setCurrent('Game');
+        },
+        'Quit': function() {
+            state.setCurrent('Quit');
         }
     };
     state = new State();

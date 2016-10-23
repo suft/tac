@@ -47,6 +47,9 @@ State.prototype.run = function() {
         case 'Game':
             this.game.run();
             break;
+        case 'Quit':
+            window.close();
+            break;
         default:
             break;
     }

@@ -68,5 +68,30 @@
         "clickfill": "Orange",
         "change": "Game",
         "font": "AzedoBold"
+    },
+    "05": {
+        "type": "button",
+        "x": 400,
+        "y": 470,
+        "lx": 300,
+        "ly": 450,
+        "w": 200,
+        "h": 40,
+        "text": "Quit",
+        "horizontal": "center",
+        "vertical": "center",
+        "mode": "center",
+        "leading": 10,
+        "size": 30,
+        "weight": 1,
+        "style": "normal",
+        "fill": "White",
+        "stroke": "White",
+        "hoverstroke": "LightSlateGrey",
+        "hoverfill": "LightSlateGrey",
+        "clickstroke": "Orange",
+        "clickfill": "Orange",
+        "change": "Quit",
+        "font": "AzedoBold"
     }
 }
