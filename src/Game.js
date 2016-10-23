@@ -70,7 +70,7 @@ Game.prototype.render = function() {
             ellipse(400, 300, 300);
             break;
         case 'T':
-        stroke("CYAN");
+        stroke("CORAL");
         strokeWeight(75);
         line(
             400 - (225 * 2/3),

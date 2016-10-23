@@ -4,7 +4,7 @@
   "description": "A Tic Tac Toe Clone",
   "main": "./window.js",
   "scripts": {
-      "start": "electron ."
+      "start": "./node_modules/.bin/electron ."
   },
   "author": "Sufien Tout",
   "license": "MIT",
