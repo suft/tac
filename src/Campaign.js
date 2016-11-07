@@ -1,13 +1,13 @@
-var Game = function() {
+var Campaign = function() {
     this.initialized = false;
-    this.mode = '';
+    this.difficulty = '';
     this.board = [];
     this.player = '';
     this.winner = '';
     this.turns = 0;
 };
 
-Game.prototype.initialize = function(object) {
+Campaign.prototype.initialize = function() {
     this.board = [];
     for (var x = 0; x < 3; x++) {
         for (var y = 0; y < 3; y++) {
@@ -20,16 +20,42 @@ Game.prototype.initialize = function(object) {
             }));
         }
     }
+    this.difficulty = 'Easy';
     this.player = random(['X', 'O']);
     this.winner = '';
     this.turns = 0;
 };
 
-Game.prototype.copy = function() {
-    return Object.assign(new Game(), this);
+Campaign.prototype.copy = function() {
+    return Object.assign(new Campaign(), this);
 };
 
-Game.prototype.render = function() {
+Campaign.prototype.victory = function() {
+    if (this.winner === 'X') {
+        stroke("CYAN");
+        strokeWeight(75);
+        line(
+            400 - (225 * 2/3),
+            300 - (225 * 2/3),
+            400 + (225 * 2/3),
+            300 + (225 * 2/3)
+        );
+        line(
+             400 - (225 * 2/3),
+             300 + (225 * 2/3),
+             400 + (225 * 2/3),
+             300 - (225 * 2/3)
+        );
+    } else if (this.winner === 'O') {
+        stroke("PURPLE");
+        strokeWeight(75);
+        ellipse(400, 300, 300);
+    } else if (this.winner === 'T') {
+
+    }
+};
+
+Campaign.prototype.render = function() {
     background("BLACK");
     switch (this.winner) {
         case '':
@@ -50,25 +76,10 @@ Game.prototype.render = function() {
             this.outcome();
             break;
         case 'X':
-            stroke("CYAN");
-            strokeWeight(75);
-            line(
-                400 - (225 * 2/3),
-                300 - (225 * 2/3),
-                400 + (225 * 2/3),
-                300 + (225 * 2/3)
-            );
-            line(
-                 400 - (225 * 2/3),
-                 300 + (225 * 2/3),
-                 400 + (225 * 2/3),
-                 300 - (225 * 2/3)
-            );
+
             break;
         case 'O':
-            stroke("PURPLE");
-            strokeWeight(75);
-            ellipse(400, 300, 300);
+
             break;
         case 'T':
         stroke("CORAL");
@@ -92,7 +103,7 @@ Game.prototype.render = function() {
 
 };
 
-Game.prototype.run = function() {
+Campaign.prototype.run = function() {
     if (!this.initialized) {
         this.initialize();
         this.initialized = true;
@@ -100,13 +111,13 @@ Game.prototype.run = function() {
     this.render();
 };
 
-Game.prototype.change = function() {
+Campaign.prototype.change = function() {
     if (this.player === 'X') this.player = 'O';
     else if (this.player === 'O') this.player = 'X';
     this.turns++;
 };
 
-Game.prototype.outcome = function() {
+Campaign.prototype.outcome = function() {
     if (this.board[0].value === this.board[1].value &&
         this.board[0].value === this.board[2].value &&
         this.board[0].value !== '') {

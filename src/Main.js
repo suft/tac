@@ -8,6 +8,9 @@ function setup() {
         'Game': function() {
             state.setCurrent('Game');
         },
+        // 'Campaign': function() {
+        //     state.setCurrent('Campaign');
+        // },
         'Quit': function() {
             state.setCurrent('Quit');
         }
@@ -18,6 +21,7 @@ function setup() {
         scene: setupScene(),
         layout: setupLayout(),
         game: setupGame()
+        //campaign: setupCampaign();
     });
 }
 
@@ -47,6 +51,12 @@ function setupGame() {
     var game = new Game();
     game.initialize();
     return game;
+}
+
+function setupCampaign() {
+    // var campaign = new Campaign();
+    // campaign.initialize();
+    // return campaign;
 }
 
 function keyPressed() {

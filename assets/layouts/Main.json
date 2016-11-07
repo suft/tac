@@ -41,7 +41,7 @@
         "hoverfill": "LightSlateGrey",
         "clickstroke": "Orange",
         "clickfill": "Orange",
-        "change": "Game",
+        "change": "Campaign",
         "font": "AzedoBold"
     },
     "04": {
